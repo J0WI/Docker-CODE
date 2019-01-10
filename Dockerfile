@@ -9,7 +9,7 @@ COPY /scripts/*.sh /
 RUN /install-libreoffice.sh
 
 # Entry point
-ENTRYPOINT ["/start-libreoffice.sh"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
 EXPOSE 9980
 
